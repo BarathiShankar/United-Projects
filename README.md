@@ -1,16 +1,16 @@
 <p align="center">
-  <h1>Location-Based Attendance System</h1>
+  <h1>Location-Based Automated Attendance System</h1>
 </p>
 
 Welcome to the **LOCATION BASED ATTENDANCE SYSTEM**!  
-This project is an intelligent attendance solution that leverages geolocation to mark user attendance only when they are within one of four predefined sets of coordinates (locations).
+This project is an intelligent attendance solution that leverages geolocation to mark user attendance only when they are within the radius of distance provided by the host.
 <hr/>
 
 
 ## 📚 About
 
 - **Purpose:** Allow staff to dynamically create location-based attendance sessions.
--**Key Feature:** Attendance is marked only if students are within the specified radius of the defined location.
+-**Key Feature:** Attendance is marked only if students are within the specified radius of the defined location.It involves complete automation of attendence
 - **Audience:** Suitable for colleges, offices, field staff tracking, events, or any scenario requiring location-based verification.
 
 ---
@@ -18,27 +18,34 @@ This project is an intelligent attendance solution that leverages geolocation to
 ## 🗂️ Repository Structure
 
 ```
-attendance-system-web/
+Fully_Automized_Proj/
 │
 ├── index.html       # Landing page
 ├── host.html        # Staff portal to generate attendance link
 ├── student.html     # Student portal to mark attendance
 ├── register.html    # Student registration page
 ├── style.css        # Stylesheet for all pages
+├── DB.sql           # Create a database for the site
 └── app.js
+
+Fully_Automized_Proj/
+│
+├── Attendence.html      # Attendemce marking page
+├── index.html           # Index login page
+├── student.html         # Student Registration portal
+├── submit.php           # Sends data from website to DB
+Readme.md
 ```
 
 ---
 
 ## 🚀 Features
 
-**Dynamic Location Validation:** Staff enter latitude, longitude, and radius for attendance sessions.
+**Dynamic Location Validation:** We detect Staff's latitude, longitude, and radius for attendance sessions.
 
-**Link Generation:** Generates a unique link for students to mark attendance.
+**Student Registration:** Students register once with their unique registration number.
 
-**Student Registration:** Students register with their unique registration number.
-
-**Real-Time Tracking:** Attendance automatically appears on the staff portal.
+**Real-Time Tracking:** Attendance automatically appears on the staff portal once the student reaches within the provided radius.
 
 **User-Friendly Interface:** Clean, responsive web pages for staff and students.
 ---
@@ -48,11 +55,8 @@ attendance-system-web/
 **Staff Portal (host.html):**
 Staff enters a location and radius → generates a unique attendance link.
 
-**Link Sharing:**
-The attendance link is shared with students.
-
-**Student Portal (student.html):**
-Students open the link → enter registration number → system validates their current location.
+**Stundent Registration**
+The attendance of students who have already logged in are marked automatically once they reach the radius.
 
 **Attendance Recording:**
 If the student is within the valid radius, attendance is marked and reflected in real-time on the staff portal.
@@ -78,4 +82,4 @@ For questions, suggestions, or collaboration, open an issue or contact the repos
 - nivriti3266@gmail.com
 ---
 
-<p align="center"><b>Mark yottendance, not just your presence ! 📍</b></p>
+<p align="center"><b>Mark your attendance, not just your presence ! 📍</b></p>
